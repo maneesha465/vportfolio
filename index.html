@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="http://www.w3.org/2000/svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./portfolio.css">
+</head>
+<body>
+   <!-- Login Form -->
+<div id="login" class="container mt-5">
+    <h2 class="text-center">Login</h2>
+    <form id="loginForm" onsubmit="handleLogin(event)">
+        <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+            <div class="error" id="loginEmailError"></div>
+        </div>
+        <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+            <div class="error" id="loginPasswordError"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <p class="text-center mt-3">Don't have an account? <a href="#" onclick="showSignupForm()">Sign Up</a></p>
+</div>
+
+<!-- Signup Form -->
+<div id="signup" class="container mt-5" style="display: none;">
+    <h2 class="text-center">Sign Up</h2>
+    <form id="signupForm" onsubmit="handleSignup(event)">
+        <div class="mb-3">
+            <label for="signupEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="signupEmail" required>
+            <div class="error" id="signupEmailError"></div>
+        </div>
+        <div class="mb-3">
+            <label for="signupPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="signupPassword" required>
+            <div class="error" id="signupPasswordError"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+    <p class="text-center mt-3">Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+</div>
+
+
+
+
+<div id="portfolio">
+    
+<header>
+    <nav class="navbar navbar-expand-lg  bg-body-tertiary">
+        <div class="container-fluid   bg-secondary">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold fs-4" aria-current="page" href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-danger">Subscribe</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<!-- second page -->
+
+<div class="container-fluid bg-secondary" id="home" >
+  <div class="row  pt-2 pb-2">
+    <div class="col-md-6 pt-2 bg-secondary ">
+      <img src="./myproimage.jpeg" class="img-fluid  rounded-circle shadow img-thumbnail" alt="Image">
+    </div>
+
+    <div class="col-md-6 text-justify hero-text pt-5 text-white ">
+      <h1 class="pt-5">Hi, it's me Maneesha M A</h1>
+      <p class="fs-2 pt-5">Palakkad, Kerala 
+        <br>Email: maneeshama7@gmail.com </p>
+    
+    </div>
+  </div>
+</div> 
+
+<!-- Third page -->
+
+<div class="container-fluid pt-2 pb-2" id="about" >
+  <div class="row bg-secondary pt-3 pb-3">
+
+<div class="objective bg-secondary">
+<h2 class=" text-center">About</h2><br>
+<div class="social-icons text-center">
+ <p class="text-center"> I'am postgraduated student.I have no any working experences.Looking for a Web development job.I'm good at HTML , CSS and javascript.</p>
+ 
+  <H3>Education</H3>
+  
+    <p class="text-center">Degree:BCA from Calicut University</p>
+    
+    <p class="text-center">Post Gratuation:M.sc Computer Science from Calicut University</p>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- fourth page -->
+
+  <div class="container-fluid bg-secondary" id="skills">
+    <h1 class="text-center pb-2 pt-2">SKILLS</h1>
+    <div class="row pb-2 pt-2">
+        <div class="col-md-6 pt-2 pb-5">
+            <div class="card servicesText mt-4 pb-5">
+                <div class="card-body pb-5 ml-4 ">
+                    <h4 class="card-title text-center mt-3">Skills</h4>
+                    <ol class="card-text mt-4 mb-5">
+                        <li class="pb-4">JAVASCRIPT</li>
+                        <li class="pb-3">BOOTSTRAP</li>
+                        <li class="pb-3">HTML</li>
+                        <li class="pb-3">CSS</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 pt-2 pb-5">
+            <div class="card servicesText mt-4 pb-5 ">
+                <div class="card-body pb-5 ml-4 ">
+                    <h4 class="card-title text-center mt-2 pb-2">Projects</h4>
+                    <h6 class="pb-2">TRAVEL AND TOURISM</h6>
+                    <p class="pb-2">It is a Website that provides comparison between different travel agencies and their packages. Hence the customer can choose the better one according to their requirements.</p>
+                    <h6>STRESS DETECTION IN IT PROFESSIONALS</h6>
+                    <p class="pb-2">This Website helps to identify the stress in IT employees and also provide remedies for them. The website uses the front end as JavaScript, HTML, and CSS and the back end as Python with Flask framework.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- fifth page -->
+
+
+      
+        <div class="container-fluid pt-2 pb-2" id="contact">
+          <div class="row justify-content-center bg-secondary pt-2 pb-2">
+               <div class="col-md-6 pt-2 pb-2"> 
+                  <h2 class="text-center">Contact</h2>
+                  <form  onsubmit="handleSubmit(event)" class="contact-form">
+                      <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" class="form-control" id="fullname"  name="fullname" placeholder="Enter your name" required>
+                          <span id="fullnameError"></span>
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="contactnumber">Contact Number</label>
+                        <input type="number" class="form-control" id="contactnumber" name="contactnumber" placeholder="Enter your contact number" required>
+                        <span id="numberError"></span>
+                    </div>
+                      <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                      </div>
+                      <button type="submit"  class="btn btn-primary mt-2">Submit</button>
+                  </form>
+              </div> 
+          </div>
+      </div>
+    </div>
+      </form>
+  <script src="./bom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
